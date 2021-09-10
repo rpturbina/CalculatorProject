@@ -45,11 +45,11 @@ button {
     background-color: orange;
 }
 
-.button:hover {
-    background-color: #a9a9a9;
+button:hover {
+    background-color: darkgray;
 }
 
 .operator:hover,
 .equal-sign:hover {
-    background-image: darkorange;
+    background-color: #ff8c00;
 }
