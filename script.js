@@ -111,12 +111,13 @@ decimal.addEventListener('click', (event) => {
 })
 
 // menjalankan fungsi tombol persen
-const inputePercentage = () => {
-
+const inputPercentage = () => {
+    currentNumber = currentNumber / 100
 }
 
 const percentageBtn = document.querySelector('.percentage')
 
 percentageBtn.addEventListener('click', () => {
-    currentNumber = currentNumber
+    inputPercentage()
+    updateScreen(currentNumber)
 })
