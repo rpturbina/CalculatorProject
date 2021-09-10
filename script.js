@@ -56,9 +56,10 @@ const calculate = () => {
     switch (calculationOperator) {
         case "+":
             if ((prevNumber === '0.2' || '0.1') && (currentNumber === '0.2' || '0.1')) {
-
+                result = (parseFloat(prevNumber) * 10 + parseFloat(currentNumber) * 10) / 10;
+            } else {
+                result = parseFloat(prevNumber) + parseFloat(currentNumber)
             }
-            result = parseFloat(prevNumber) + parseFloat(currentNumber)
             break
         case "-":
             result = prevNumber - currentNumber
